@@ -21,6 +21,7 @@
 
 #include <lemon/core.h>
 #include <lemon/error.h>
+#include <lemon/bits/stl_iterators.h>
 
 namespace lemon {
 

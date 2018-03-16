@@ -23,6 +23,7 @@
 #include <lemon/error.h>
 #include <lemon/bits/default_map.h>
 #include <lemon/bits/map_extender.h>
+#include <lemon/bits/stl_iterators.h>
 
 //\ingroup digraphbits
 //\file

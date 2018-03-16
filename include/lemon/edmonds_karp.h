@@ -23,6 +23,7 @@
 /// \ingroup max_flow
 /// \brief Implementation of the Edmonds-Karp algorithm.
 
+#include <lemon/core.h>
 #include <lemon/tolerance.h>
 #include <vector>
 

@@ -65,6 +65,7 @@ namespace lemon {
   ///problem type and size info.
   ///The found data is returned in a special struct that can be evaluated
   ///and passed to the appropriate reader function.
+  inline
   DimacsDescriptor dimacsType(std::istream& is)
   {
     DimacsDescriptor r;
