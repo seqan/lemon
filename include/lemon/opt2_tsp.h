@@ -362,6 +362,6 @@ namespace lemon {
 
   };
 
-}; // namespace lemon
+} // namespace lemon
 
 #endif
