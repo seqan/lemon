@@ -292,9 +292,11 @@ namespace lemon {
       _vector.resize(size, value);
     }
 
-  private:
-
-    RangeMap& operator=(const RangeMap&);
+    RangeMap(RangeMap const &) = default;
+    RangeMap(RangeMap &&) = default;
+    RangeMap & operator=(RangeMap const &) = default;
+    RangeMap & operator=(RangeMap &&) = default;
+    ~RangeMap() = default;
 
   public:
 
@@ -626,6 +628,11 @@ namespace lemon {
 
     /// Constructor
     FunctorToMap(const F &f = F()) : _f(f) {}
+    FunctorToMap(FunctorToMap const &) = default;
+    FunctorToMap(FunctorToMap &&) = default;
+    FunctorToMap & operator=(FunctorToMap const &) = default;
+    FunctorToMap & operator=(FunctorToMap &&) = default;
+    ~FunctorToMap() = default;
     ///\e
     Value operator[](const Key &k) const { return _f(k); }
   };

@@ -77,6 +77,11 @@ namespace lemon {
         ///
         Node(const Node&) { }
 
+        Node & operator=(Node const &) = default;
+        Node(Node &&) = default;
+        Node & operator=(Node &&) = default;
+        ~Node() = default;
+
         /// %Invalid constructor \& conversion.
 
         /// Initializes the object to be invalid.
@@ -187,6 +192,11 @@ namespace lemon {
         Arc(const Arc&) { }
         /// %Invalid constructor \& conversion.
 
+        Arc & operator=(Arc const &) = default;
+        Arc(Arc &&) = default;
+        Arc & operator=(Arc &&) = default;
+        ~Arc() = default;
+
         /// Initializes the object to be invalid.
         /// \sa Invalid for more details.
         Arc(Invalid) { }
@@ -236,6 +246,11 @@ namespace lemon {
         ///
         OutArcIt(const OutArcIt& e) : Arc(e) { }
         /// %Invalid constructor \& conversion.
+
+        OutArcIt(OutArcIt &&) = default;
+        OutArcIt & operator=(OutArcIt const &) = default;
+        OutArcIt & operator=(OutArcIt &&) = default;
+        ~OutArcIt() = default;
 
         /// Initializes the iterator to be invalid.
         /// \sa Invalid for more details.
@@ -516,6 +531,9 @@ namespace lemon {
         explicit NodeMap(const Digraph&) { }
         /// Constructor with given initial value
         NodeMap(const Digraph&, T) { }
+        NodeMap & operator=(NodeMap const &) = default;
+
+        ~NodeMap() = default;
 
       private:
         ///Copy constructor
@@ -527,6 +545,9 @@ namespace lemon {
           checkConcept<ReadMap<Node, T>, CMap>();
           return *this;
         }
+
+        NodeMap(NodeMap &&) = default;
+        NodeMap & operator=(NodeMap &&) = default;
       };
 
       /// \brief Standard graph map type for the arcs.

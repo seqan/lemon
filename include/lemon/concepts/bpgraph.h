@@ -95,6 +95,10 @@ namespace lemon {
         /// Copy constructor.
         ///
         Node(const Node&) { }
+        Node(Node &&) = default;
+        Node & operator=(Node const &) = default;
+        Node & operator=(Node &&) = default;
+        ~Node() = default;
 
         /// %Invalid constructor \& conversion.
 
@@ -144,6 +148,11 @@ namespace lemon {
         ///
         RedNode(const RedNode&) : Node() { }
 
+        RedNode(RedNode &&) = default;
+        RedNode & operator=(RedNode const &) = default;
+        RedNode & operator=(RedNode &&) = default;
+        ~RedNode() = default;
+
         /// %Invalid constructor \& conversion.
 
         /// Initializes the object to be invalid.
@@ -170,6 +179,11 @@ namespace lemon {
         /// Copy constructor.
         ///
         BlueNode(const BlueNode&) : Node() { }
+
+        BlueNode(BlueNode &&) = default;
+        BlueNode & operator=(BlueNode const &) = default;
+        BlueNode & operator=(BlueNode &&) = default;
+        ~BlueNode() = default;
 
         /// %Invalid constructor \& conversion.
 
@@ -374,6 +388,11 @@ namespace lemon {
         /// Copy constructor.
         ///
         Edge(const Edge&) { }
+        Edge(Edge &&) = default;
+        Edge & operator=(Edge const &) = default;
+        Edge & operator=(Edge &&) = default;
+        ~Edge() = default;
+
         /// %Invalid constructor \& conversion.
 
         /// Initializes the object to be invalid.
@@ -545,6 +564,10 @@ namespace lemon {
         /// Copy constructor.
         ///
         Arc(const Arc&) { }
+        Arc(Arc &&) = default;
+        Arc & operator=(Arc const &) = default;
+        Arc & operator=(Arc &&) = default;
+        ~Arc() = default;
         /// %Invalid constructor \& conversion.
 
         /// Initializes the object to be invalid.

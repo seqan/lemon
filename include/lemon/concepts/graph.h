@@ -109,6 +109,11 @@ namespace lemon {
         ///
         Node(const Node&) { }
 
+        Node(Node &&) = default;
+        Node & operator=(Node const &) = default;
+        Node & operator=(Node &&) = default;
+        ~Node() = default;
+
         /// %Invalid constructor \& conversion.
 
         /// Initializes the object to be invalid.
@@ -219,6 +224,11 @@ namespace lemon {
         ///
         Edge(const Edge&) { }
         /// %Invalid constructor \& conversion.
+
+        Edge(Edge &&) = default;
+        Edge & operator=(Edge const &) = default;
+        Edge & operator=(Edge &&) = default;
+        ~Edge() = default;
 
         /// Initializes the object to be invalid.
         /// \sa Invalid for more details.
@@ -397,6 +407,11 @@ namespace lemon {
         ///
         Arc(const Arc&) { }
         /// %Invalid constructor \& conversion.
+
+        Arc(Arc &&) = default;
+        Arc & operator=(Arc const &) = default;
+        Arc & operator=(Arc &&) = default;
+        ~Arc() = default;
 
         /// Initializes the object to be invalid.
         /// \sa Invalid for more details.

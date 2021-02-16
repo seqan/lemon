@@ -1657,6 +1657,10 @@ namespace lemon {
       RedNode() {}
       RedNode(const RedNode& node) : Node(node) {}
       RedNode(Invalid) : Node(INVALID){}
+      RedNode(RedNode &&) = default;
+      RedNode & operator=(RedNode const &) = default;
+      RedNode & operator=(RedNode &&) = default;
+      ~RedNode() = default;
     };
 
     class BlueNode : public Node {
@@ -1669,6 +1673,10 @@ namespace lemon {
       BlueNode() {}
       BlueNode(const BlueNode& node) : Node(node) {}
       BlueNode(Invalid) : Node(INVALID){}
+      BlueNode(BlueNode &&) = default;
+      BlueNode & operator=(BlueNode const &) = default;
+      BlueNode & operator=(BlueNode &&) = default;
+      ~BlueNode() = default;
     };
 
     class Edge {
