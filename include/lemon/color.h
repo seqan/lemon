@@ -62,35 +62,35 @@ namespace lemon {
   };
 
   /// White color constant
-  extern const Color WHITE;
+  inline const Color WHITE;
   /// Black color constant
-  extern const Color BLACK;
+  inline const Color BLACK;
   /// Red color constant
-  extern const Color RED;
+  inline const Color RED;
   /// Green color constant
-  extern const Color GREEN;
+  inline const Color GREEN;
   /// Blue color constant
-  extern const Color BLUE;
+  inline const Color BLUE;
   /// Yellow color constant
-  extern const Color YELLOW;
+  inline const Color YELLOW;
   /// Magenta color constant
-  extern const Color MAGENTA;
+  inline const Color MAGENTA;
   /// Cyan color constant
-  extern const Color CYAN;
+  inline const Color CYAN;
   /// Grey color constant
-  extern const Color GREY;
+  inline const Color GREY;
   /// Dark red color constant
-  extern const Color DARK_RED;
+  inline const Color DARK_RED;
   /// Dark green color constant
-  extern const Color DARK_GREEN;
-  /// Drak blue color constant
-  extern const Color DARK_BLUE;
+  inline const Color DARK_GREEN;
+  /// Dark blue color constant
+  inline const Color DARK_BLUE;
   /// Dark yellow color constant
-  extern const Color DARK_YELLOW;
+  inline const Color DARK_YELLOW;
   /// Dark magenta color constant
-  extern const Color DARK_MAGENTA;
+  inline const Color DARK_MAGENTA;
   /// Dark cyan color constant
-  extern const Color DARK_CYAN;
+  inline const Color DARK_CYAN;
 
   ///Map <tt>int</tt>s to different <tt>Color</tt>s
 
